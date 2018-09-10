@@ -12,3 +12,9 @@ function palindrome(str) {
 
   return str === reversed;
 }
+
+// NOT USING .reverse() :
+
+// function palindrome(str) {
+//   return str.split("").every((char, index) => char === str[str.length - i - 1]);
+// }
