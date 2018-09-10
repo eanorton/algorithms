@@ -8,6 +8,27 @@
 // Example:
 //   fib(4) === 3
 
+// RECURSIVE SOLUTION:
+
 function fib(n) {
   return n < 2 ? n : fib(n - 2) + fib(n - 1)
 }
+
+
+// MEMOIZED SOLUTION:
+
+// const memoizeFunc = function(passedFunc) {
+//   const cache = {};
+//   return function(x) {
+//     if (x in cache) return cache[x];
+//     return cache[x] = passedFunc(x);
+//   };
+// };
+//
+// const fibonacci = memoizeFunc(function(n) {
+//   if(n==0 || n == 1) {
+//     return n;
+//   } else {
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+//   }
+// })
