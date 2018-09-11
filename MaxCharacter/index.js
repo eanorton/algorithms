@@ -22,3 +22,16 @@ function maxChar(str) {
   }
   return maxChar;
 }
+
+// make a character map object of a string :
+
+// const str = "hi there!"
+// const charMap = {};
+//
+// for (let char of str) {
+//   if (charMap[char]) {
+//     charMap[char]++;
+//   } else {
+//     charMap[char] = 1;
+//   }
+// }
